@@ -52,7 +52,7 @@ python3 manage.py migrate
 Place your fine-tuned SBERT model in the fine_tuned_sbert_model/ directory.
 	6.	Start the Development Server:
 
-python manage.py runserver
+python3 manage.py runserver
 
 
 	7.	Access the Web Interface:
