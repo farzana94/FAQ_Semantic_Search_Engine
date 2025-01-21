@@ -35,6 +35,7 @@ cd semantic-search-engine
 	2.	Set Up Virtual Environment:
 
 python3.11 -m venv venv
+
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 
