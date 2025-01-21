@@ -1,0 +1,21 @@
+#datas from dummy_faq_data and faq_questions
+
+queries = ["What should I do if it is not working Remote Control?", "What is the process to reset Samsung TV?",
+"Where can I find information about Customer Support?", "Can I check Remote Control?", "How do I enable Wi-Fi?","How do I check Warranty?", "Is this tv of good quality for use as a computer monitor?" ]
+retrieved_docs = [
+    [894, 507, 2946, 3129, 2407],  
+    [2407, 1193, 2417, 2471, 865],   
+    [733, 1841, 661, 3167, 1578],
+    [2497, 1934, 2388, 1799, 975],
+    [2407, 2935, 474, 2472, 939],
+    [1971, 2764, 1670, 2744, 163],
+    [3285, 9, 1954, 20, 1881]
+]
+ground_truth = [{}
+    {2417},
+    {},
+    {2497, 1934, 2388, 1799},
+    {2472, 939},  
+    {3285, 9, 1954, 20, 1881},
+    {3285, 9, 1954, 20, 1881}          
+]
