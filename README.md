@@ -74,13 +74,17 @@ Example Command:
 from search_engine.services.evaluation_service import calculate_mrr, calculate_ndcg
 
 queries = ["What is your return policy?", "How do I reset my password?"]
+
 retrieved_docs = [["doc1", "doc3", "doc2"], ["doc5", "doc4", "doc6"]]
+
 ground_truth = [{"doc1", "doc2"}, {"doc5"}]
 
 mrr = calculate_mrr(ground_truth, retrieved_docs)
+
 ndcg = calculate_ndcg(ground_truth, retrieved_docs)
 
 print(f"MRR: {mrr}")
+
 print(f"NDCG: {ndcg}")
 
 Future Enhancements
