@@ -26,38 +26,38 @@ Prerequisites
 Model was fine tuned using Amazon QA.
 
 Setup
-	1.	Clone the Repository:
+  1.	Clone the Repository:
 
-git clone https://github.com/your-username/semantic-search-engine.git
-cd semantic-search-engine
+	git clone https://github.com/your-username/semantic-search-engine.git
+	cd semantic-search-engine
 
+   2.	Set Up Virtual Environment: 
+	
+ 	python3.11 -m venv venv
 
-	2.	Set Up Virtual Environment:
-
-python3.11 -m venv venv
-
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-
-
-	3.	Install Dependencies:
-
-pip install -r requirements.txt
+	source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 
-	4.	Run Migrations:
+  3.	Install Dependencies:
 
-python3 manage.py migrate
-
-
-	5.	Download or Add the SBERT Model:
-Place your fine-tuned SBERT model in the fine_tuned_sbert_model/ directory.
-	6.	Start the Development Server:
-
-python3 manage.py runserver
+	pip install -r requirements.txt
 
 
-	7.	Access the Web Interface:
-Open your browser and navigate to http://127.0.0.1:8000.
+  4.	Run Migrations:
+
+	python3 manage.py migrate
+
+
+  5.	Download or Add the SBERT Model:
+	Place your fine-tuned SBERT model in the working directory.
+ 
+  6.	Start the Development Server:
+
+	python3 manage.py runserver
+
+
+  7.	Access the Web Interface:
+        Open your browser and navigate to http://127.0.0.1:8000.
 
 How to Use
 	1.	Navigate to the search page and enter a query in the search bar.
@@ -65,34 +65,9 @@ How to Use
 	3.	Evaluate search quality using metrics like MRR and NDCG.
 
 
-Evaluation
+  8.	Evaluation:
 
 Run evaluation metrics on labeled test queries in evaluation_data.txt.
-
-Example Command:
-
-from search_engine.services.evaluation_service import calculate_mrr, calculate_ndcg
-
-
-queries = ["What is your return policy?", "How do I reset my password?"]
-
-
-retrieved_docs = [["doc1", "doc3", "doc2"], ["doc5", "doc4", "doc6"]]
-
-
-ground_truth = [{"doc1", "doc2"}, {"doc5"}]
-
-
-mrr = calculate_mrr(ground_truth, retrieved_docs)
-
-
-ndcg = calculate_ndcg(ground_truth, retrieved_docs)
-
-
-print(f"MRR: {mrr}")
-
-
-print(f"NDCG: {ndcg}")
 
 Future Enhancements
 	•	Add user authentication for personalized search history.
@@ -100,17 +75,8 @@ Future Enhancements
 	•	Integrate Elasticsearch for scalable indexing.
 	•	Add advanced analytics for query performance.
 
-Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Acknowledgments
 	•	SentenceTransformers for semantic embeddings.
 	•	FAISS for efficient similarity search.
 	•	Django for the web framework.
 
-Feel free to replace your-username in the repository link with your GitHub username and add a LICENSE file if applicable.
