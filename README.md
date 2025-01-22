@@ -1,31 +1,41 @@
 # FAQ_Semantic_Search_Engine
 Here’s a sample README.md file for your project to push on GitHub. You can customize it as needed.
 
-Semantic Search Engine
+Semantic Search Engine:
 
 This project implements a semantic search engine for Frequently Asked Questions (FAQs) using Django, Sentence-BERT (SBERT), and FAISS or Elasticsearch. The engine retrieves contextually similar results based on user queries and evaluates performance using metrics like Mean Reciprocal Rank (MRR) and Normalized Discounted Cumulative Gain (NDCG).
 
-Features
-	•	Semantic similarity search using SBERT.
-	•	Indexing and retrieval using FAISS or Elasticsearch.
-	•	Evaluation of search results with MRR and NDCG.
-	•	Web interface for querying and viewing results.
-	•	JSON-based dataset for FAQs.
-	•	Support for hard negative mining to improve model accuracy.
+Features:
+
+•	Semantic similarity search using SBERT.
+
+•	Indexing and retrieval using FAISS or Elasticsearch.
+
+•	Evaluation of search results with MRR and NDCG.
+
+•	Web interface for querying and viewing results.
+
+•	JSON-based dataset for FAQs.
+
+•	Support for hard negative mining to improve model accuracy.
 
 
 
-Getting Started
+Getting Started:
 
-Prerequisites
-	•	Python 3.11
-	•	FAISS 
-	•	Django 4.2+
-	•	Sentence-BERT (sentence-transformers library)
+Prerequisites:
 
-Model was fine tuned using Amazon QA.
+•	Python 3.11
 
-Setup
+•	FAISS 
+
+•	Django 4.2+
+
+•	Sentence-BERT (sentence-transformers library)
+
+Model was fine tuned using Amazon QA dataset.
+
+Setup:
   1.	Clone the Repository:
 
 	git clone https://github.com/your-username/semantic-search-engine.git
