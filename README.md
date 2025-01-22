@@ -69,14 +69,21 @@ How to Use
 
 Run evaluation metrics on labeled test queries in evaluation_data.txt.
 
-Future Enhancements
-	•	Add user authentication for personalized search history.
-	•	Implement query auto-completion and suggestion.
-	•	Integrate Elasticsearch for scalable indexing.
-	•	Add advanced analytics for query performance.
+Future Enhancements:
 
-Acknowledgments
-	•	SentenceTransformers for semantic embeddings.
-	•	FAISS for efficient similarity search.
-	•	Django for the web framework.
+•	Add user authentication for personalized search history.
+
+•	Implement query auto-completion and suggestion.
+
+•	Integrate Elasticsearch for scalable indexing.
+
+•	Add advanced analytics for query performance.
+
+Acknowledgments:
+
+•	SentenceTransformers for semantic embeddings.
+
+•	FAISS for efficient similarity search.
+
+•	Django for the web framework.
 
