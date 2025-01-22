@@ -59,6 +59,7 @@ Setup:
 
 
   5.	Download or Add the SBERT Model:
+     
 	Place your fine-tuned SBERT model in the working directory.
  
   6.	Start the Development Server:
@@ -69,10 +70,13 @@ Setup:
   7.	Access the Web Interface:
         Open your browser and navigate to http://127.0.0.1:8000.
 
-How to Use
-	1.	Navigate to the search page and enter a query in the search bar.
-	2.	View retrieved documents ranked by semantic similarity.
-	3.	Evaluate search quality using metrics like MRR and NDCG.
+How to Use:
+
+  1.	Navigate to the search page and enter a query in the search bar.
+
+  2.	View retrieved documents ranked by semantic similarity.
+
+  3.	Evaluate search quality using metrics like MRR and NDCG.
 
 
   8.	Evaluation:
